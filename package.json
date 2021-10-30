@@ -1,0 +1,25 @@
+{
+  "name": "bot-command-schedule",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "pm2 start ./src/index.js --name discord_bot",
+    "start:dev": "nodemon ./src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@sentry/node": "^6.13.3",
+    "@sentry/tracing": "^6.13.3",
+    "axios": "^0.21.4",
+    "discord.js": "^12.5.3",
+    "dotenv": "^10.0.0",
+    "google-tts-api": "^2.0.2",
+    "moment": "^2.29.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}
